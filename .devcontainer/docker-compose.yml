@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    volumes:
+      - ..:/workspace/agents
+      - $PROJECTS_PATH:/workspace/projects
+    command: sleep infinity

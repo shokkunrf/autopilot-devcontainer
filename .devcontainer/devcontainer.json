@@ -1,0 +1,20 @@
+{
+  "name": "Autopilot",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true,
+        "[javascript][typescript][html][css][json][markdown]": {
+          "prettier.resolveGlobalModules": true
+        }
+      },
+      "extensions": [
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "remoteUser": "node"
+}
